@@ -171,7 +171,7 @@ var user = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
 for(var key in user){
-  if(user[key] === false || user[key] === null || user[key] === NaN || user[key] === 0 || user[key] === "" || user[key] === undefined){
+  if(!user[key]){
     delete user[key];
   }
 }
