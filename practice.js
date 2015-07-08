@@ -266,11 +266,11 @@ function MakePerson(name, bday, ssn){
 
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
-function MakeCard(cardnum, exp, cvs, name, company){
+function MakeCard(cardnum, exp, cvv, name, company){
   return card = {
                   cardNumber: cardnum,
                   expDate: exp,
-                  CVS: cvs,
+                  CVV: cvv,
                   cardHolder: name,
                   Company: company
                 }
